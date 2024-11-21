@@ -1,4 +1,4 @@
-import type SVG from './svg';
+import type SVG from "./svg";
 export interface AspectData {
     degree: number;
     orbit: number;
@@ -113,6 +113,23 @@ export interface Settings {
     DIGNITIES_EXACT_EXALTATION_DEFAULT: Dignity[];
     ANIMATION_CUSPS_ROTATION_SPEED: number;
     DEBUG: boolean;
+    VARIANT: "text" | "symbols";
+    SIGNS_POSITIONS?: any;
+    COLOR_ARIES_TEXT_COLOR: string;
+    COLOR_TAURUS_TEXT_COLOR: string;
+    COLOR_GEMINI_TEXT_COLOR: string;
+    COLOR_CANCER_TEXT_COLOR: string;
+    COLOR_LEO_TEXT_COLOR: string;
+    COLOR_VIRGO_TEXT_COLOR: string;
+    COLOR_LIBRA_TEXT_COLOR: string;
+    COLOR_SCORPIO_TEXT_COLOR: string;
+    COLOR_SAGITTARIUS_TEXT_COLOR: string;
+    COLOR_CAPRICORN_TEXT_COLOR: string;
+    COLOR_AQUARIUS_TEXT_COLOR: string;
+    COLOR_PISCES_TEXT_COLOR: string;
+    DISABLED_EXTRA_FIELDS: boolean;
+    DISABLED_INNER_CIRCLE?: boolean;
+    ADD_LINE_CIRCLES?: boolean;
 }
 declare const default_settings: Settings;
 export default default_settings;
